@@ -1,4 +1,4 @@
-# NeuroGrip: EEG-Based Controlled Robotic Arm
+# NeuroGrip: EEG-Based Robotic Arm
 
 ## Overview
 
