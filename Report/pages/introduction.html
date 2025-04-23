@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction - NeuroGrip Report</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/animations.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="logo">
+          <span>Neuro</span>
+          <span class="logo-accent">Grip</span>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-item"><a href="../index.html">Abstract</a></li>
+          <li class="nav-item"><a href="toc.html">Table of Contents</a></li>
+          <li class="nav-item active"><a href="introduction.html">Introduction</a></li>
+          <li class="nav-item"><a href="literature.html">Literature Review</a></li>
+          <li class="nav-item"><a href="methodology.html">Methodology</a></li>
+          <li class="nav-item"><a href="results.html">Results and Discussion</a></li>
+          <li class="nav-item"><a href="demo.html">Demo</a></li>
+          <li class="nav-item"><a href="conclusion.html">Conclusion</a></li>
+          <li class="nav-item"><a href="references.html">References</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+          </label>
+          <span class="theme-label">Dark Mode</span>
+        </div>
+      </nav>
+
+      <main class="content">
+        <header>
+          <h1>Introduction</h1>
+        </header>
+        <section class="page-content">
+          <p>
+            NeuroGrip is an advanced EEG-based brain-machine interface (BMI) system designed to control a robotic arm using intuitive motor imagery. Inspired by the paper Brain-Controlled Robotic Arm System Based on Multi-Directional CNN-BiLSTM Network Using EEG Signals, this project leverages deep learning techniques to decode EEG signals and translate them into real-time robotic arm movements. In addition to EEG-based system, it implements Robotic Arm movements based on voice commands.
+          </p>
+          
+          <div class="image-container">
+            <img src="/assets/photos/bcihelmet.jpeg" alt="Open BCI Helmet and Cyton Board">
+          </div>
+          
+          
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/theme.js"></script>
+  </body>
+</html>

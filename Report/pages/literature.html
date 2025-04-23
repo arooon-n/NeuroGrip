@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literature Review - NeuroGrip Report</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/animations.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="logo">
+          <span>Neuro</span>
+          <span class="logo-accent">Grip</span>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-item"><a href="../index.html">Abstract</a></li>
+          <li class="nav-item"><a href="toc.html">Table of Contents</a></li>
+          <li class="nav-item"><a href="introduction.html">Introduction</a></li>
+          <li class="nav-item active"><a href="literature.html">Literature Review</a></li>
+          <li class="nav-item"><a href="methodology.html">Methodology</a></li>
+          <li class="nav-item"><a href="results.html">Results and Discussion</a></li>
+          <li class="nav-item"><a href="demo.html">Demo</a></li>
+          <li class="nav-item"><a href="conclusion.html">Conclusion</a></li>
+          <li class="nav-item"><a href="references.html">References</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+          </label>
+          <span class="theme-label">Dark Mode</span>
+        </div>
+      </nav>
+
+      <main class="content">
+        <header>
+          <h1>Literature Review</h1>
+        </header>
+        <section class="page-content">
+          <p>
+            The literature review focuses on the advancements in Brain-Computer Interface (BCI) technology, particularly in the context of controlling robotic systems using EEG signals. The review highlights key studies and methodologies that have contributed to the development of effective BCI systems, emphasizing the integration of deep learning techniques for signal classification and robotic control.
+          </p>
+
+          <h4>BCI & EEG Overview</h4>
+          <p>BCIs enable brain-to-device control. EEG is the most used non-invasive method.</p>
+
+          <h4>Traditional methods and advancements in Deep Learning</h4>
+          <p>Traditional methods (CSP, SVM) had low accuracy & poor real-time use. Deep learning (CNN-BiLSTM) improves multi-directional movement decoding. Jeong et al. (2020): Achieved 60% execution & 43% imagery success in 3D control.</p>
+
+          <h4>BCI Competition IV Insights</h4>
+          <p>BCI Competition IV showed CSP-based methods still strong for classification.</p>
+
+          <h4>Key Challenges</h4>
+          <p>Low SNR, user variability, real-time performance.</p>
+
+          <h4>Future Scope</h4>
+          <p>Adaptive learning, hybrid BCIs, improved usability.</p>
+
+
+          <p>
+            The review also discusses the challenges faced in real-time BCI applications, including signal noise, user variability, and the need for personalized training protocols. By synthesizing findings from various research efforts, this literature review provides a comprehensive overview of the current state of BCI technology and its potential for enhancing human-robot interaction.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/theme.js"></script>
+  </body>
+</html>

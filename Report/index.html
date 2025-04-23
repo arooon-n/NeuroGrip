@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroGrip Report</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/animations.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="logo">
+          <span>Neuro</span>
+          <span class="logo-accent">Grip</span>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-item active"><a href="index.html">Abstract</a></li>
+          <li class="nav-item"><a href="./pages/toc.html">Table of Contents</a></li>
+          <li class="nav-item"><a href="./pages/introduction.html">Introduction</a></li>
+          <li class="nav-item"><a href="./pages/literature.html">Literature Review</a></li>
+          <li class="nav-item"><a href="./pages/methodology.html">Methodology</a></li>
+          <li class="nav-item"><a href="./pages/results.html">Results and Discussion</a></li>
+          <li class="nav-item"><a href="./pages/demo.html">Demo</a></li>
+          <li class="nav-item"><a href="./pages/conclusion.html">Conclusion</a></li>
+          <li class="nav-item"><a href="./pages/references.html">References</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+          </label>
+          <span class="theme-label">Dark Mode</span>
+        </div>
+      </nav>
+
+      <main class="content">
+        <header>
+          <h1>Abstract</h1>
+        </header>
+        <section class="page-content">
+          <p>
+            In recent years, Brain-Computer Interface (BCI) technology has emerged as a transformative innovation, enabling direct communication between the human brain and external devices. This project, titled "NeuroGrip", aims to develop a real-time EEG-controlled robotic arm that assists individuals with upper-limb disabilities by interpreting motor imagery signals from the brain. Utilizing non-invasive electroencephalography (EEG), NeuroGrip captures neural activity corresponding to specific imagined movements and translates these into robotic arm commands, offering users a novel means of physical interaction with their environment.The system architecture comprises three main modules: signal acquisition, signal processing and classification, and robotic actuation. EEG signals are acquired using the OpenBCI Cyton Board with 16 channels(14 channels are used for this project) from motor cortex regions. The raw EEG data undergoes preprocessing steps, including bandpass filtering (4–40 Hz), Independent Component Analysis (ICA) for artifact removal, and Common Average Referencing (CAR) to enhance signal quality. Feature extraction focuses on frequency-domain characteristics, particularly mean and standard deviation of EEG signals within key brainwave bands (delta, theta, alpha, beta, and gamma). A hybrid deep learning model combining 2D Convolutional Neural Networks (CNNs) and Bidirectional Long Short-Term Memory (Bi-LSTM) layers, named MDCBN, is employed to classify motor imagery tasks. This model captures both spatial and temporal features of EEG data, enabling high classification accuracy and robust performance in real-time applications. The classified output is translated into specific robotic arm gestures using an Arduino Mega, forming a wireless closed-loop control system.
+          </p>
+
+          <div class="image-container">
+            <img src="/assets/photos/robotic3d.jpg" alt="Robotic arm in laboratory environment">
+          </div>
+
+          <p>
+            The hardware includes a 5-degree-of-freedom (DOF) robotic arm that responds intuitively to user intentions.To ensure adaptability, the system supports a personalized training pipeline where each user trains the model with their available EEG data. Moreover, NeuroGrip incorporates visual feedback and safety mechanisms to prevent unintended movements, enhancing usability and reliability. The project showcases successful real-time implementation and demonstrates potential in rehabilitation, prosthetics, and assistive technologies. This interdisciplinary endeavor integrates principles from neuroscience, embedded systems, artificial intelligence, and robotics. NeuroGrip represents a step toward more accessible and intelligent neuroprosthetic solutions, empowering individuals with physical impairments and laying the groundwork for future brain-controlled assistive devices.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/navigation.js"></script>
+    <script src="./js/theme.js"></script>
+  </body>
+</html>

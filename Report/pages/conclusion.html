@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conclusion - NeuroGrip Report</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/animations.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="logo">
+          <span>Neuro</span>
+          <span class="logo-accent">Grip</span>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-item"><a href="../index.html">Abstract</a></li>
+          <li class="nav-item"><a href="toc.html">Table of Contents</a></li>
+          <li class="nav-item"><a href="introduction.html">Introduction</a></li>
+          <li class="nav-item"><a href="literature.html">Literature Review</a></li>
+          <li class="nav-item"><a href="methodology.html">Methodology</a></li>
+          <li class="nav-item"><a href="results.html">Results and Discussion</a></li>
+          <li class="nav-item"><a href="demo.html">Demo</a></li>
+          <li class="nav-item active"><a href="conclusion.html">Conclusion</a></li>
+          <li class="nav-item"><a href="references.html">References</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+          </label>
+          <span class="theme-label">Dark Mode</span>
+        </div>
+      </nav>
+
+      <main class="content">
+        <header>
+          <h1>Conclusion and Future Work</h1>
+        </header>
+        <section class="page-content">
+          <h2>Conclusion</h2>
+          <p>
+            We developed a brain-controlled robotic arm using EEG signals from OpenBCI channels. A robust preprocessing pipeline (bandpass filtering, ICA, CAR) enhanced signal quality. Frequency-domain features were extracted and used to train a custom CNN-BiLSTM (MDCBN) model, which effectively decoded motor imagery for real-time arm control. This project demonstrates the potential of non-invasive EEG in assistive robotics and neurorehabilitation applications.
+          </p>
+
+          <h2>Future Enhancements</h2>
+          <p>
+            While our system demonstrates significant capabilities, several areas for future research and development have been identified:
+          </p>
+          <ul>
+            <li><strong>Real-time implementation</strong> and optimization techniques which could improve the model interference speed for smoother arm control</li>
+            <li>Expanding it to support <strong>multiclass classification</strong> (e.g., left/right/up/down) or continuous control using regression models or reinforcement learning could make the system more versatile.</li>
+            <li>Integrating transfer learning or adaptive models can enhance generalization and reduce the need for extensive retraining for each new user.</li>
+            <li><strong>Hybrid BCI Systems:</strong> Combining EEG with other biosignals like EMG (muscle signals) or EOG (eye movements) may create more robust hybrid systems, reducing ambiguity in command classification.</li>
+          </ul>
+   
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/theme.js"></script>
+  </body>
+</html>
